@@ -1,10 +1,11 @@
-import Login from "./pages/login/login";
+import Provider from "./services/global-context-provider/provider";
+import Webpage from "./pages/webpage/webpage";
 
 function App() {
     return (
-        <div>
-            <Login/>
-        </div>
+        <Provider>
+            <Webpage/>
+        </Provider>
     );
 }
 

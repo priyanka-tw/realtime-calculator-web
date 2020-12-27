@@ -15,7 +15,7 @@ const Login = () => {
             console.log("disconnected from server via ws.");
         };
         setSocket(socket);
-    });
+    }, [setSocket]);
 
     return (
         <LoginContainer/>
