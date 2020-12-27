@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Home page should render home page 1`] = `
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c2 {
+  radius-border: 5px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  min-width: 100%;
+}
+
+.c3 {
+  font-size: 20px;
+  font-family: verdana;
+}
+
+.c5 {
+  font-size: 14px;
+  font-family: verdana;
+  margin-left: 400px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        class="c2"
+        src="calculator.svg"
+      />
+      <h2
+        class="c3"
+      >
+        calculator
+      </h2>
+      <div
+        class="c4"
+      >
+        <div>
+          <h3
+            class="c5"
+            data-testid="greet-message"
+          >
+            Hi 
+            Test-username
+            , currently connected users: 
+            1
+          </h3>
+        </div>
+        <button
+          data-testid="logout-button"
+          type="button"
+        >
+           logout
+        </button>
+      </div>
+    </div>
+  </div>
+   
+</div>
+`;
