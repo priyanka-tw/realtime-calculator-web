@@ -15,19 +15,19 @@ const CalcButton = ({value, onClick, isOperation, isEqualTo, isZero}) => {
         >{value}
         </StyledDigitButton>
     );
-}
+};
 CalcButton.props = {
     value: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
     isOperation: PropTypes.bool,
     isEqualTo: PropTypes.bool,
     isZero: PropTypes.bool
-}
+};
 
 CalcButton.defaultProps = {
     isOperation: false,
     isEqualTo: false,
     isZero: false
-}
+};
 
 export default CalcButton;

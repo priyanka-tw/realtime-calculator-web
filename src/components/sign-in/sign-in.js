@@ -10,19 +10,19 @@ const SignIn = () => {
 
     const onNameUpdate = (name) => {
         setName(name);
-    }
+    };
 
     const onStart = () => {
         socket.send(JSON.stringify({event: "login", data: name}));
         setUsername(name);
-    }
+    };
 
     const handleKeyPress = (event) => {
-        console.log('in the handle key press')
+        console.log('in the handle key press');
         if(event.key === 'Enter' && name){
             onStart();
         }
-    }
+    };
 
     return (
         <LoginWrapper>
@@ -40,6 +40,6 @@ const SignIn = () => {
             </InputButtonWrapper>
         </LoginWrapper>
     );
-}
+};
 
 export default SignIn;

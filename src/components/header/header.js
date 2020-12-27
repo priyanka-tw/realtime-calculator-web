@@ -11,6 +11,6 @@ const Header = () => {
             <H2>{LABELS.CALCULATOR}</H2>
         </HeaderWrapper>
     );
-}
+};
 
 export default Header;

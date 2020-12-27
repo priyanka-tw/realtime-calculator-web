@@ -10,7 +10,7 @@ describe('SignIn', () => {
     const mockedFn = jest.fn();
     it('should render the component', () => {
 
-        const {container} = render(<SignIn />)
+        const {container} = render(<SignIn />);
 
         expect(container).toMatchSnapshot();
     });
@@ -22,13 +22,13 @@ describe('SignIn', () => {
         const {getByTestId} = render(
             <Context.Provider value={{setUsername: mockedFn, socket: client}}>
             <SignIn />
-            </Context.Provider>)
+            </Context.Provider>);
 
         await server.connected;
         await act(async () => {
-            await fireEvent.change(getByTestId('username'), {target: {value: 'this-is-a-sample-username'}})
-            await fireEvent.click(getByTestId('start-button'))
-        })
+            await fireEvent.change(getByTestId('username'), {target: {value: 'this-is-a-sample-username'}});
+            await fireEvent.click(getByTestId('start-button'));
+        });
 
         expect(mockedFn).toHaveBeenCalledWith('this-is-a-sample-username');
         await expect(server).toReceiveMessage({"data": "this-is-a-sample-username", "event": "login"});

@@ -25,5 +25,5 @@ const Login = () => {
             <SignIn/>
         </LoginContainer>
     );
-}
+};
 export default Login;

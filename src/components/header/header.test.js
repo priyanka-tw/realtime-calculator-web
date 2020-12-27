@@ -5,7 +5,7 @@ import Header from "./header";
 
 describe('Header', () => {
     it('should render the component', () => {
-        const {container} = render(<Header/>)
+        const {container} = render(<Header/>);
 
         expect(container).toMatchSnapshot();
     });

@@ -13,7 +13,7 @@ describe('Login page', () => {
 
     it('should render login page', () => {
         const {container} = render(<Context.Provider value={{setSocket: jest.fn()}}>
-            <Login/> </Context.Provider>)
+            <Login/> </Context.Provider>);
 
         expect(container).toMatchSnapshot();
     });
@@ -25,7 +25,7 @@ describe('Login page', () => {
             <Context.Provider value={{setSocket: mockedFn}}>
                 <Login/>
             </Context.Provider>
-        )
+        );
         await server.connected;
 
         expect(server.messages).toStrictEqual([]);
