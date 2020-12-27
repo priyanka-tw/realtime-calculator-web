@@ -21,7 +21,7 @@ describe('SignIn', () => {
 
         const {getByTestId} = render(
             <Context.Provider value={{setUsername: mockedFn, socket: client}}>
-                <SignIn/>
+                <SignIn isSubmitDisable={false}/>
             </Context.Provider>);
 
         await server.connected;
@@ -35,7 +35,7 @@ describe('SignIn', () => {
     });
 
     it('should not enable submit button if connection with server is not establish', async () => {
-        const {getByTestId} = render(<SignIn isSubmitDisable={true}/>);
+        const {getByTestId} = render(<SignIn isSubmitDisable/>);
 
         expect(getByTestId('start-button').disabled).toStrictEqual(true);
     });

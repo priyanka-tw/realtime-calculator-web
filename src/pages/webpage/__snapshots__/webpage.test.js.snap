@@ -553,6 +553,7 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
         <button
           class="c7"
           data-testid="start-button"
+          disabled=""
         >
           Start
         </button>
