@@ -8,6 +8,16 @@ import Context from "../../services/global-context-provider/context";
 
 describe('SignIn', () => {
     const mockedFn = jest.fn();
+    var server, client ;
+    beforeEach(() =>{
+         server = new WS("ws://localhost:8080/ws", {jsonProtocol: true});
+         client = new WebSocket("ws://localhost:8080/ws");
+    });
+
+    afterEach(() => {
+        WS.clean();
+    });
+
     it('should render the component', () => {
 
         const {container} = render(<SignIn isSubmitDisable={false}/>);
@@ -16,9 +26,6 @@ describe('SignIn', () => {
     });
 
     it('should navigate trigger event on ws of login on click of start', async () => {
-        const server = new WS("ws://localhost:8080/ws", {jsonProtocol: true});
-        const client = new WebSocket("ws://localhost:8080/ws");
-
         const {getByTestId} = render(
             <Context.Provider value={{setUsername: mockedFn, socket: client}}>
                 <SignIn isSubmitDisable={false}/>
@@ -38,5 +45,20 @@ describe('SignIn', () => {
         const {getByTestId} = render(<SignIn isSubmitDisable/>);
 
         expect(getByTestId('start-button').disabled).toStrictEqual(true);
+    });
+
+    it('should not trigger login event if username is empty', async () => {
+        const {getByTestId} = render(
+            <Context.Provider value={{setUsername: mockedFn, socket: client}}>
+                <SignIn isSubmitDisable={false}/>
+            </Context.Provider>);
+
+        await server.connected;
+        await act(async () => {
+            await fireEvent.click(getByTestId('start-button'));
+        });
+
+        expect(mockedFn).toHaveBeenCalledTimes(0);
+        expect(server).toHaveReceivedMessages([]);
     });
 });

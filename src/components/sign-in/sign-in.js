@@ -14,12 +14,14 @@ const SignIn = ({isSubmitDisable}) => {
     };
 
     const onStart = () => {
-        socket.send(JSON.stringify({event: "login", data: name}));
-        setUsername(name);
+        if (name !== '') {
+            socket.send(JSON.stringify({event: "login", data: name}));
+            setUsername(name);
+        }
     };
 
     const handleKeyPress = (event) => {
-        if(event.key === 'Enter' && name && !isSubmitDisable){
+        if (event.key === 'Enter' && name && !isSubmitDisable) {
             onStart();
         }
     };
