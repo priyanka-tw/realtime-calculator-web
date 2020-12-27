@@ -2,6 +2,7 @@ import React, {useEffect, useContext} from 'react';
 import LoginContainer from "./login.styles";
 import {URLS} from "../../constants/constants";
 import Context from '../../services/global-context-provider/context';
+import SignIn from "../../components/sign-in/sign-in";
 const Login = () => {
 
     const {setSocket} = useContext(Context);
@@ -18,7 +19,9 @@ const Login = () => {
     }, [setSocket]);
 
     return (
-        <LoginContainer/>
+        <LoginContainer>
+            <SignIn/>
+        </LoginContainer>
     );
 }
 export default Login;

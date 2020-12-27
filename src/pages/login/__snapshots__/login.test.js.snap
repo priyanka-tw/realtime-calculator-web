@@ -20,10 +20,89 @@ exports[`Login page should render login page 1`] = `
   justify-content: center;
 }
 
+.c3 {
+  color: white;
+  width: 300px;
+  font-size: 16pt;
+  font-family: verdana;
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #fff;
+  outline: none;
+  text-align: center;
+  width: 400px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 400px;
+  width: 500px;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: black;
+  margin-top: 100px;
+}
+
+.c2 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.c4 {
+  margin-top: 20px;
+  width: 200px;
+  height: 30px;
+}
+
 <div>
   <div
     class="c0"
-  />
+  >
+    <div
+      class="c1"
+    >
+      <div
+        class="c2"
+      >
+        <input
+          class="c3"
+          data-testid="username"
+          placeholder="Please enter your name"
+        />
+        <button
+          class="c4"
+          data-testid="start-button"
+        >
+          Start
+        </button>
+      </div>
+    </div>
+  </div>
    
 </div>
 `;
