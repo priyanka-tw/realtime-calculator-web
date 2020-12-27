@@ -1,10 +1,381 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Webpage should render home page if the user is logged in 1`] = `
+.c2 {
+  radius-border: 5px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  min-width: 100%;
+}
+
+.c3 {
+  font-size: 20px;
+  font-family: verdana;
+}
+
+.c5 {
+  font-size: 14px;
+  font-family: verdana;
+  margin-left: 400px;
+}
+
+.c4 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.c0 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+
+.c9 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.c8 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.c10 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+}
+
+.c11 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  color: #ffc107;
+}
+
+.c12 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  min-width: 120px;
+}
+
+.c13 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  background-color: #ffc107;
+}
+
+.c7 {
+  color: black;
+  font-size: 16pt;
+  font-family: verdana-bold;
+  background-color: #A9A9A9;
+  border: none;
+  outline: none;
+  text-align: right;
+  width: 236px;
+  height: 60px;
+}
+
+.c6 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin-top: 50px;
+}
+
 <div>
-  <p>
-    Home Page 
-  </p>
+  <div
+    class="c0"
+  >
+    <div
+      class="c1"
+    >
+      <img
+        class="c2"
+        src="calculator.svg"
+      />
+      <h2
+        class="c3"
+      >
+        calculator
+      </h2>
+      <div
+        class="c4"
+      >
+        <div>
+          <h3
+            class="c5"
+            data-testid="greet-message"
+          >
+            Hi 
+            Test-username
+            , currently connected users: 
+            1
+          </h3>
+        </div>
+        <button
+          data-testid="logout-button"
+          type="button"
+        >
+           logout
+        </button>
+      </div>
+    </div>
+    <div
+      class="c6"
+    >
+      <input
+        class="c7"
+        data-testid="output-screen"
+        readonly=""
+        value=""
+      />
+      <div
+        class="c8"
+      >
+        <div
+          class="c9"
+        >
+          <button
+            class="c10"
+            data-testid="calc-button-AC"
+            name="AC"
+            type="button"
+          >
+            AC
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-C"
+            name="C"
+            type="button"
+          >
+            C
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-%"
+            name="%"
+            type="button"
+          >
+            %
+          </button>
+          <button
+            class="c11"
+            data-testid="calc-button-/"
+            name="/"
+            type="button"
+          >
+            /
+          </button>
+        </div>
+        <div
+          class="c9"
+        >
+          <button
+            class="c10"
+            data-testid="calc-button-7"
+            name="7"
+            type="button"
+          >
+            7
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-8"
+            name="8"
+            type="button"
+          >
+            8
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-9"
+            name="9"
+            type="button"
+          >
+            9
+          </button>
+          <button
+            class="c11"
+            data-testid="calc-button-*"
+            name="*"
+            type="button"
+          >
+            *
+          </button>
+        </div>
+        <div
+          class="c9"
+        >
+          <button
+            class="c10"
+            data-testid="calc-button-4"
+            name="4"
+            type="button"
+          >
+            4
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-5"
+            name="5"
+            type="button"
+          >
+            5
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-6"
+            name="6"
+            type="button"
+          >
+            6
+          </button>
+          <button
+            class="c11"
+            data-testid="calc-button--"
+            name="-"
+            type="button"
+          >
+            -
+          </button>
+        </div>
+        <div
+          class="c9"
+        >
+          <button
+            class="c10"
+            data-testid="calc-button-1"
+            name="1"
+            type="button"
+          >
+            1
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-2"
+            name="2"
+            type="button"
+          >
+            2
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-3"
+            name="3"
+            type="button"
+          >
+            3
+          </button>
+          <button
+            class="c11"
+            data-testid="calc-button-+"
+            name="+"
+            type="button"
+          >
+            +
+          </button>
+        </div>
+        <div
+          class="c9"
+        >
+          <button
+            class="c12"
+            data-testid="calc-button-0"
+            name="0"
+            type="button"
+          >
+            0
+          </button>
+          <button
+            class="c10"
+            data-testid="calc-button-."
+            name="."
+            type="button"
+          >
+            .
+          </button>
+          <button
+            class="c13"
+            data-testid="calc-button-="
+            name="="
+            type="button"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
    
 </div>
 `;
@@ -130,6 +501,7 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
       >
         calculator
       </h2>
+      
     </div>
     <div
       class="c4"
