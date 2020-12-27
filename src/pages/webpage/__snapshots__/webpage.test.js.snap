@@ -151,6 +151,28 @@ exports[`Webpage should render home page if the user is logged in 1`] = `
   margin-top: 50px;
 }
 
+.c14 {
+  color: red;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-flex: display;
+  -ms-flex: display;
+  flex: display;
+  margin-left: 200px;
+}
+
+.c15 {
+  font-size: 20px;
+  font-family: verdana;
+  color: black;
+  text-align: center;
+  margin-top: 45px;
+}
+
 <div>
   <div
     class="c0"
@@ -190,189 +212,203 @@ exports[`Webpage should render home page if the user is logged in 1`] = `
       </div>
     </div>
     <div
-      class="c6"
+      style="display: flex;"
     >
-      <input
-        class="c7"
-        data-testid="output-screen"
-        readonly=""
-        value=""
-      />
       <div
-        class="c8"
+        class="c6"
       >
+        <input
+          class="c7"
+          data-testid="output-screen"
+          readonly=""
+          value=""
+        />
         <div
-          class="c9"
+          class="c8"
         >
-          <button
-            class="c10"
-            data-testid="calc-button-AC"
-            name="AC"
-            type="button"
+          <div
+            class="c9"
           >
-            AC
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-C"
-            name="C"
-            type="button"
+            <button
+              class="c10"
+              data-testid="calc-button-AC"
+              name="AC"
+              type="button"
+            >
+              AC
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-C"
+              name="C"
+              type="button"
+            >
+              C
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-%"
+              name="%"
+              type="button"
+            >
+              %
+            </button>
+            <button
+              class="c11"
+              data-testid="calc-button-/"
+              name="/"
+              type="button"
+            >
+              /
+            </button>
+          </div>
+          <div
+            class="c9"
           >
-            C
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-%"
-            name="%"
-            type="button"
+            <button
+              class="c10"
+              data-testid="calc-button-7"
+              name="7"
+              type="button"
+            >
+              7
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-8"
+              name="8"
+              type="button"
+            >
+              8
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-9"
+              name="9"
+              type="button"
+            >
+              9
+            </button>
+            <button
+              class="c11"
+              data-testid="calc-button-*"
+              name="*"
+              type="button"
+            >
+              *
+            </button>
+          </div>
+          <div
+            class="c9"
           >
-            %
-          </button>
-          <button
-            class="c11"
-            data-testid="calc-button-/"
-            name="/"
-            type="button"
+            <button
+              class="c10"
+              data-testid="calc-button-4"
+              name="4"
+              type="button"
+            >
+              4
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-5"
+              name="5"
+              type="button"
+            >
+              5
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-6"
+              name="6"
+              type="button"
+            >
+              6
+            </button>
+            <button
+              class="c11"
+              data-testid="calc-button--"
+              name="-"
+              type="button"
+            >
+              -
+            </button>
+          </div>
+          <div
+            class="c9"
           >
-            /
-          </button>
+            <button
+              class="c10"
+              data-testid="calc-button-1"
+              name="1"
+              type="button"
+            >
+              1
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-2"
+              name="2"
+              type="button"
+            >
+              2
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-3"
+              name="3"
+              type="button"
+            >
+              3
+            </button>
+            <button
+              class="c11"
+              data-testid="calc-button-+"
+              name="+"
+              type="button"
+            >
+              +
+            </button>
+          </div>
+          <div
+            class="c9"
+          >
+            <button
+              class="c12"
+              data-testid="calc-button-0"
+              name="0"
+              type="button"
+            >
+              0
+            </button>
+            <button
+              class="c10"
+              data-testid="calc-button-."
+              name="."
+              type="button"
+            >
+              .
+            </button>
+            <button
+              class="c13"
+              data-testid="calc-button-="
+              name="="
+              type="button"
+            >
+              =
+            </button>
+          </div>
         </div>
-        <div
-          class="c9"
+      </div>
+      <div
+        class="c14"
+      >
+        <h2
+          class="c15"
         >
-          <button
-            class="c10"
-            data-testid="calc-button-7"
-            name="7"
-            type="button"
-          >
-            7
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-8"
-            name="8"
-            type="button"
-          >
-            8
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-9"
-            name="9"
-            type="button"
-          >
-            9
-          </button>
-          <button
-            class="c11"
-            data-testid="calc-button-*"
-            name="*"
-            type="button"
-          >
-            *
-          </button>
-        </div>
-        <div
-          class="c9"
-        >
-          <button
-            class="c10"
-            data-testid="calc-button-4"
-            name="4"
-            type="button"
-          >
-            4
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-5"
-            name="5"
-            type="button"
-          >
-            5
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-6"
-            name="6"
-            type="button"
-          >
-            6
-          </button>
-          <button
-            class="c11"
-            data-testid="calc-button--"
-            name="-"
-            type="button"
-          >
-            -
-          </button>
-        </div>
-        <div
-          class="c9"
-        >
-          <button
-            class="c10"
-            data-testid="calc-button-1"
-            name="1"
-            type="button"
-          >
-            1
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-2"
-            name="2"
-            type="button"
-          >
-            2
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-3"
-            name="3"
-            type="button"
-          >
-            3
-          </button>
-          <button
-            class="c11"
-            data-testid="calc-button-+"
-            name="+"
-            type="button"
-          >
-            +
-          </button>
-        </div>
-        <div
-          class="c9"
-        >
-          <button
-            class="c12"
-            data-testid="calc-button-0"
-            name="0"
-            type="button"
-          >
-            0
-          </button>
-          <button
-            class="c10"
-            data-testid="calc-button-."
-            name="."
-            type="button"
-          >
-            .
-          </button>
-          <button
-            class="c13"
-            data-testid="calc-button-="
-            name="="
-            type="button"
-          >
-            =
-          </button>
-        </div>
+          History:
+        </h2>
+        <div />
       </div>
     </div>
   </div>
