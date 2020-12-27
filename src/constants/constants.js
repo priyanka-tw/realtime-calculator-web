@@ -1,5 +1,6 @@
 export const URLS = {
-    WEBSOCKET: "ws://localhost:8080/ws"
+    WEBSOCKET: "ws://localhost:8080/ws",
+    CALCULATE: "http://localhost:8080/calculate-and-broadcast"
 };
 
 export const LABELS = {
