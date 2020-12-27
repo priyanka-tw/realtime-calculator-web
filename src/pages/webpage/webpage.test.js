@@ -8,14 +8,14 @@ describe('Webpage', () => {
 
     it('should render login page if the user is not logged in', () => {
         const {container} = render(<Context.Provider value={{username: '', setSocket: jest.fn()}}>
-            <Webpage/> </Context.Provider>)
+            <Webpage/> </Context.Provider>);
 
         expect(container).toMatchSnapshot();
     });
 
     it('should render home page if the user is logged in', () => {
         const {container} = render(<Context.Provider value={{username: 'test-username'}}>
-            <Webpage/> </Context.Provider>)
+            <Webpage/> </Context.Provider>);
 
         expect(container).toMatchSnapshot();
     });

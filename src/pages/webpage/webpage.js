@@ -1,3 +1,4 @@
+import React from 'react';
 import {useContext} from 'react';
 import Login from "../login/login";
 import Context from "../../services/global-context-provider/context";
@@ -11,6 +12,6 @@ const Webpage = () => {
         return <Home/>;
     }
     return <Login/>;
-}
+};
 
 export default Webpage;
