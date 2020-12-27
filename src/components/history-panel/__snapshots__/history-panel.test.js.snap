@@ -1,5 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`History panel should render history panel with descending order of events 1`] = `
+.c2 {
+  width: 200px;
+  margin: 10px auto;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 14pt;
+  color: black;
+  font-family: verdana;
+  border-radius: 25px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.c0 {
+  color: red;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  -webkit-flex: display;
+  -ms-flex: display;
+  flex: display;
+  margin-left: 200px;
+}
+
+.c1 {
+  font-size: 20px;
+  font-family: verdana;
+  color: black;
+  text-align: center;
+  margin-top: 45px;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    <h2
+      class="c1"
+    >
+      History:
+    </h2>
+    <div>
+      <div
+        class="c2"
+      >
+        1+4 = 5
+      </div>
+      <div
+        class="c2"
+      >
+        6*3 = 18
+      </div>
+    </div>
+  </div>
+   
+</div>
+`;
+
 exports[`History panel should render history panel with maximum of 10 records 1`] = `
 .c2 {
   width: 200px;

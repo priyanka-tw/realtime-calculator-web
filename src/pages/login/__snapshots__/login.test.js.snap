@@ -136,6 +136,7 @@ exports[`Login page should render login page 1`] = `
         <button
           class="c7"
           data-testid="start-button"
+          disabled=""
         >
           Start
         </button>

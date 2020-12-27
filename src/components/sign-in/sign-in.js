@@ -1,9 +1,10 @@
 import React, {useContext, useState} from 'react';
+import PropTypes from 'prop-types';
 import {LABELS} from '../../constants/constants';
 import {InputButtonWrapper, LoginWrapper, NameInput, StyledButton} from "./sign-in.styles";
 import Context from "../../services/global-context-provider/context";
 
-const SignIn = () => {
+const SignIn = ({isSubmitDisable}) => {
 
     const {socket, setUsername} = useContext(Context);
     const [name, setName] = useState('');
@@ -18,8 +19,7 @@ const SignIn = () => {
     };
 
     const handleKeyPress = (event) => {
-        console.log('in the handle key press');
-        if(event.key === 'Enter' && name){
+        if(event.key === 'Enter' && name && !isSubmitDisable){
             onStart();
         }
     };
@@ -35,11 +35,16 @@ const SignIn = () => {
                     onChange={({target}) => onNameUpdate(target.value)}
                 />
                 <StyledButton
+                    disabled={isSubmitDisable}
                     data-testid='start-button'
                     onClick={onStart}>{LABELS.START}</StyledButton>
             </InputButtonWrapper>
         </LoginWrapper>
     );
+};
+
+SignIn.propTypes = {
+    isSubmitDisable: PropTypes.bool.isRequired,
 };
 
 export default SignIn;
