@@ -3,8 +3,7 @@
 exports[`Header should render the component 1`] = `
 .c1 {
   radius-border: 5px;
-  width: 20%;
-  height: 50%;
+  height: 50px;
   margin-right: 10px;
 }
 
@@ -20,6 +19,7 @@ exports[`Header should render the component 1`] = `
   -webkit-align-self: start;
   -ms-flex-item-align: start;
   align-self: start;
+  min-width: 100%;
 }
 
 .c2 {

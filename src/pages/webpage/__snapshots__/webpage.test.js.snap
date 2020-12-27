@@ -29,7 +29,7 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
   justify-content: center;
 }
 
-.c3 {
+.c6 {
   color: white;
   width: 300px;
   font-size: 16pt;
@@ -42,7 +42,7 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
   width: 400px;
 }
 
-.c1 {
+.c4 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -64,7 +64,7 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
   margin-top: 100px;
 }
 
-.c2 {
+.c5 {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -82,10 +82,36 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
   justify-content: center;
 }
 
-.c4 {
+.c7 {
   margin-top: 20px;
   width: 200px;
   height: 30px;
+}
+
+.c2 {
+  radius-border: 5px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.c1 {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-align-self: start;
+  -ms-flex-item-align: start;
+  align-self: start;
+  min-width: 100%;
+}
+
+.c3 {
+  font-size: 20px;
+  font-family: verdana;
 }
 
 <div>
@@ -95,16 +121,29 @@ exports[`Webpage should render login page if the user is not logged in 1`] = `
     <div
       class="c1"
     >
-      <div
+      <img
         class="c2"
+        src="calculator.svg"
+      />
+      <h2
+        class="c3"
+      >
+        calculator
+      </h2>
+    </div>
+    <div
+      class="c4"
+    >
+      <div
+        class="c5"
       >
         <input
-          class="c3"
+          class="c6"
           data-testid="username"
           placeholder="Please enter your name"
         />
         <button
-          class="c4"
+          class="c7"
           data-testid="start-button"
         >
           Start
