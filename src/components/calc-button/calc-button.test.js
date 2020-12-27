@@ -29,7 +29,7 @@ describe('Calc Button', () => {
         const {getByTestId} = render(<CalcButton value="1" onClick={mockFn}/>);
 
         await act(async () => {
-            await fireEvent.click(getByTestId('digit-button-1'));
+            await fireEvent.click(getByTestId('calc-button-1'));
         });
 
         expect(mockFn).toHaveBeenCalledTimes(1);

@@ -1,19 +1,19 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import StyledDigitButton from "./calc-button.styles";
+import StyledCalcButton from "./calc-button.styles";
 
 const CalcButton = ({value, onClick, isOperation, isEqualTo, isZero}) => {
     return (
-        <StyledDigitButton
+        <StyledCalcButton
             name={value}
             type="button"
             onClick={(event) => onClick(event.target.name)}
-            data-testid={`digit-button-${value}`}
+            data-testid={`calc-button-${value}`}
             isOperation={isOperation}
             isEqualTo={isEqualTo}
             isZero={isZero}
         >{value}
-        </StyledDigitButton>
+        </StyledCalcButton>
     );
 };
 CalcButton.props = {

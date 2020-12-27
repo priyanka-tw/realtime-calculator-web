@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-const StyledDigitButton = styled.button`        
+const StyledCalcButton = styled.button`        
     font-size: 16pt;
     font-family: verdana;
     min-width: 60px;
@@ -24,4 +24,4 @@ const StyledDigitButton = styled.button`
   `}
 `;
 
-export default StyledDigitButton;
+export default StyledCalcButton;

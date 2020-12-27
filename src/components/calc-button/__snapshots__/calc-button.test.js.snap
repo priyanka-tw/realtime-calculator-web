@@ -17,7 +17,7 @@ exports[`Calc Button should render the component for equal button 1`] = `
 <div>
   <button
     class="c0"
-    data-testid="digit-button-="
+    data-testid="calc-button-="
     name="="
     type="button"
   >
@@ -43,7 +43,7 @@ exports[`Calc Button should render the component for zero button 1`] = `
 <div>
   <button
     class="c0"
-    data-testid="digit-button-0"
+    data-testid="calc-button-0"
     name="0"
     type="button"
   >
@@ -68,7 +68,7 @@ exports[`Calc Button should render the component with given value and default pr
 <div>
   <button
     class="c0"
-    data-testid="digit-button-1"
+    data-testid="calc-button-1"
     name="1"
     type="button"
   >
@@ -94,7 +94,7 @@ exports[`Calc Button should render the component with given value as an operatio
 <div>
   <button
     class="c0"
-    data-testid="digit-button-+"
+    data-testid="calc-button-+"
     name="+"
     type="button"
   >
