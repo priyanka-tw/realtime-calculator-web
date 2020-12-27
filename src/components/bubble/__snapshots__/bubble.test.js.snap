@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Bubble should render the component with given data 1`] = `
+.c0 {
+  width: 200px;
+  margin: 10px auto;
+  border: 3px solid black;
+  padding: 10px;
+  text-align: center;
+  font-size: 14pt;
+  color: black;
+  font-family: verdana;
+  border-radius: 25px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+<div>
+  <div
+    class="c0"
+  >
+    some random data
+  </div>
+</div>
+`;
