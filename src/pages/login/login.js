@@ -1,6 +1,6 @@
 import React, {useEffect, useContext} from 'react';
 import LoginContainer from "./login.styles";
-import URLS from "../../constants/constants";
+import {URLS} from "../../constants/constants";
 import Context from '../../services/global-context-provider/context';
 const Login = () => {
 
