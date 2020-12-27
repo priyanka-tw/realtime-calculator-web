@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Calc Button should render the component for equal button 1`] = `
+.c0 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  background-color: #ffc107;
+}
+
+<div>
+  <button
+    class="c0"
+    data-testid="digit-button-="
+    name="="
+    type="button"
+  >
+    =
+  </button>
+</div>
+`;
+
+exports[`Calc Button should render the component for zero button 1`] = `
+.c0 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  min-width: 120px;
+}
+
+<div>
+  <button
+    class="c0"
+    data-testid="digit-button-0"
+    name="0"
+    type="button"
+  >
+    0
+  </button>
+</div>
+`;
+
+exports[`Calc Button should render the component with given value and default props 1`] = `
+.c0 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+}
+
+<div>
+  <button
+    class="c0"
+    data-testid="digit-button-1"
+    name="1"
+    type="button"
+  >
+    1
+  </button>
+</div>
+`;
+
+exports[`Calc Button should render the component with given value as an operation 1`] = `
+.c0 {
+  font-size: 16pt;
+  font-family: verdana;
+  min-width: 60px;
+  height: 60px;
+  outline: none;
+  background-color: black;
+  color: white;
+  cursor: pointer;
+  border: 1px solid #80808054;
+  color: #ffc107;
+}
+
+<div>
+  <button
+    class="c0"
+    data-testid="digit-button-+"
+    name="+"
+    type="button"
+  >
+    +
+  </button>
+</div>
+`;
