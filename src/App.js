@@ -1,3 +1,4 @@
+import React from 'react';
 import Provider from "./services/global-context-provider/provider";
 import Webpage from "./pages/webpage/webpage";
 
