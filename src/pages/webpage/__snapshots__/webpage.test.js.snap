@@ -126,6 +126,7 @@ exports[`Webpage should render home page if the user is logged in 1`] = `
   cursor: pointer;
   border: 1px solid #80808054;
   background-color: #ffc107;
+  min-width: 120px;
 }
 
 .c7 {
@@ -380,14 +381,6 @@ exports[`Webpage should render home page if the user is logged in 1`] = `
               type="button"
             >
               0
-            </button>
-            <button
-              class="c10"
-              data-testid="calc-button-."
-              name="."
-              type="button"
-            >
-              .
             </button>
             <button
               class="c13"

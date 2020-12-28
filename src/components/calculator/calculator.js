@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import Keypad from "../../components/keypad/keypad";
 import OutputScreen from "../output-screen/output-screen";
 import Wrapper from "./calculator.styles";
@@ -7,6 +7,20 @@ import {URLS} from "../../constants/constants";
 const Calculator = () => {
 
     const [currentValue, setCurrentValue] = useState('');
+
+    useEffect(() => {
+        const aRegex = /^-?(\d+)?[-+*/%]?\d*?$/g;
+        const isValid = currentValue.match(aRegex);
+
+        let testVariable;
+        if (isValid){
+            testVariable = currentValue;
+        }else{
+            testVariable = currentValue.slice(0, currentValue.length -1);
+        }
+
+        setCurrentValue(testVariable);
+    }, [currentValue]);
 
     const reset = () => {
         setCurrentValue('');

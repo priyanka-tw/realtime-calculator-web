@@ -33,6 +33,8 @@ describe('Calculator', () => {
 
         await act(async () => {
             await fireEvent.click(getByTestId('calc-button-1'));
+        });
+        await act(async () => {
             await fireEvent.click(getByTestId('calc-button-3'));
         });
         expect(getByTestId('output-screen').value).toStrictEqual('13');
@@ -48,6 +50,8 @@ describe('Calculator', () => {
 
         await act(async () => {
             await fireEvent.click(getByTestId('calc-button-1'));
+        });
+        await act(async () => {
             await fireEvent.click(getByTestId('calc-button-3'));
         });
         expect(getByTestId('output-screen').value).toStrictEqual('13');
@@ -74,6 +78,40 @@ describe('Calculator', () => {
         });
 
         expect(getByTestId('output-screen').value).toStrictEqual('18');
+    });
+
+    describe('should check input value', () => {
+        it('should not allow to enter multiple operands in row', async () => {
+            const {getByTestId} = render(<Calculator/>);
+
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button-1'));
+            });
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button-3'));
+            });
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button-+'));
+            });
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button-%'));
+            });
+
+            expect(getByTestId('output-screen').value).toStrictEqual('13+');
+        });
+
+        it('should allow first entry of negative sign', async () => {
+            const {getByTestId} = render(<Calculator/>);
+
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button--'));
+            });
+            await act(async () => {
+                await fireEvent.click(getByTestId('calc-button-2'));
+            });
+
+            expect(getByTestId('output-screen').value).toStrictEqual('-2');
+        });
     });
 
 });

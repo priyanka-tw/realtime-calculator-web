@@ -34,8 +34,7 @@ const Keypad = ({onClick}) => {
                 </Row>
                 <Row>
                     <CalcButton value="0" onClick={onClick} isZero/>
-                    <CalcButton value="." onClick={onClick}/>
-                    <CalcButton value="=" isEqualTo onClick={onClick}/>
+                    <CalcButton value="=" isEqualTo isZero onClick={onClick}/>
                 </Row>
             </Column>
         </>

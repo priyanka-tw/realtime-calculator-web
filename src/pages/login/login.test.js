@@ -7,6 +7,11 @@ import Context from "../../services/global-context-provider/context";
 
 describe('Login page', () => {
 
+    var server;
+    beforeEach(() => {
+        server = new WS("ws://localhost:8080/ws");
+    });
+
     afterEach(() => {
         WS.clean();
     });
@@ -19,14 +24,12 @@ describe('Login page', () => {
     });
 
     it('should make connection with server over ws protocol', async () => {
-        const server = new WS("ws://localhost:8080/ws");
         const mockedFn = jest.fn();
         render(
             <Context.Provider value={{setSocket: mockedFn}}>
                 <Login/>
             </Context.Provider>
         );
-        await server.connected;
 
         expect(server.messages).toStrictEqual([]);
         expect(mockedFn).toHaveBeenCalledTimes(1);

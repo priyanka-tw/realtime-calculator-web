@@ -67,6 +67,7 @@ exports[`Keypad should render the component with default prop 1`] = `
   cursor: pointer;
   border: 1px solid #80808054;
   background-color: #ffc107;
+  min-width: 120px;
 }
 
 <div>
@@ -227,14 +228,6 @@ exports[`Keypad should render the component with default prop 1`] = `
         type="button"
       >
         0
-      </button>
-      <button
-        class="c2"
-        data-testid="calc-button-."
-        name="."
-        type="button"
-      >
-        .
       </button>
       <button
         class="c5"
