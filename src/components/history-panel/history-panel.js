@@ -17,13 +17,13 @@ const HistoryPanel = () => {
         });
     }, [socket]);
 
-
     return (
         <HistoryPanelWrapper>
             <H2>{LABELS.HISTORY}</H2>
-            <div>{aNewResultArray.length > 0 && aNewResultArray.slice(0, 10).map(e => {
-                    return (
-                        <Bubble data={e} key={e}/>
+            <div>{aNewResultArray.length > 0 && aNewResultArray.slice(0, 10).map((e, i) => {
+                const key = `${e}#${i}`;
+                return (
+                        <Bubble data={e} key={key} testId={key}/>
                     );
                 }
             )}

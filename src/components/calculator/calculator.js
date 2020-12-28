@@ -59,7 +59,7 @@ const Calculator = () => {
         <Wrapper>
             <OutputScreen value={currentValue}/>
             <Keypad onClick={onClick}/>
-            {isError && <Bubble data={"ERR! Try again"} isError/>}
+            {isError && <Bubble data={"ERR! Try again"} isError testId="error-bubble"/>}
         </Wrapper>
     );
 };

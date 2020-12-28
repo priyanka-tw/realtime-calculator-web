@@ -566,6 +566,7 @@ exports[`Calculator should show error bubble if got error response from api 1`] 
     </div>
     <div
       class="c8"
+      data-testid="error-bubble"
     >
       ERR! Try again
     </div>

@@ -48,4 +48,23 @@ describe('History panel', () => {
         expect(container).toMatchSnapshot();
     });
 
+    it('should maintain order for newly entered result if existing values are same', async () => {
+        const {container} = render(<Context.Provider value={{socket: client}}>
+            <HistoryPanel/> </Context.Provider>);
+        await server.connected;
+
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*3 = 18'});
+        server.send({event: 'history', data: '6*5 = 30'});
+
+        expect(container).toMatchSnapshot();
+    });
+
 });
