@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import {Column, Row} from "./keypad.styles";
 import CalcButton from "../calc-button/calc-button";
-import SignIn from "../sign-in/sign-in";
 
 const Keypad = ({onClick}) => {
 
@@ -43,7 +42,7 @@ const Keypad = ({onClick}) => {
     );
 };
 
-SignIn.props = {
+Keypad.propTypes = {
     onClick: PropTypes.func.isRequired
 };
 

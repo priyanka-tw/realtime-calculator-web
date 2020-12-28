@@ -8,7 +8,7 @@ const Bubble = ({data}) => {
     );
 };
 
-Bubble.props = {
+Bubble.propTypes = {
     data: PropTypes.string.isRequired
 };
 

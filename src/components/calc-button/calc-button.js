@@ -16,7 +16,7 @@ const CalcButton = ({value, onClick, isOperation, isEqualTo, isZero}) => {
         </StyledCalcButton>
     );
 };
-CalcButton.props = {
+CalcButton.propTypes = {
     value: PropTypes.string.isRequired,
     onClick: PropTypes.func.isRequired,
     isOperation: PropTypes.bool,
