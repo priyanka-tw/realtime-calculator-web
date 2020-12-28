@@ -11,6 +11,12 @@ const StyledBubble = styled.div`
   font-family: verdana;
   border-radius: 25px;
   width: max-content;
+  
+   ${({ isError }) => isError && `
+    color: white;
+    background-color: #ff0000e6;
+    border: none;
+  `}
 `;
 
 export default StyledBubble;
