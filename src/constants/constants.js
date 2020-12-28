@@ -1,6 +1,6 @@
 export const URLS = {
-    WEBSOCKET: "ws://localhost:8080/ws",
-    CALCULATE: "http://localhost:8080/calculate-and-broadcast"
+    WEBSOCKET: "wss://realtime-calculator-api.herokuapp.com/ws",
+    CALCULATE: "https://realtime-calculator-api.herokuapp.com/calculate-and-broadcast"
 };
 
 export const LABELS = {
